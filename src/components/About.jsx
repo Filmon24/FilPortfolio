@@ -26,12 +26,10 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg text-slate-700 dark:text-gray-300 mb-6">
-                  What drives me is the opportunity to apply my technical knowledge to solve real-world challenges. Whether it's developing efficient algorithms, building user-friendly applications, or diving into data analysis.
-                </p>
+                My passion for space and astronomy is what truly drives me, especially the chance to apply my technical knowledge to real-world challenges. Whether it's developing efficient algorithms for satellite systems, building user-friendly applications for stargazers, or diving into astrophysical data analysis, I thrive on these opportunities                </p>
                 
                 <p className="text-lg text-slate-700 dark:text-gray-300 mb-8">
-                  Beyond academics, I actively seek opportunities to contribute to open-source projects and develop my own projects that showcase my skills.
-                </p>
+                Beyond academics, I actively seek opportunities to contribute and develop my own projects that showcase my skills and fuel my ambition to achieve higher positions. My ultimate aim is to use these roles to make a significant and lasting impact on my community.                </p>
                 
                 <div className="flex flex-wrap gap-4">
                   <div className="bg-blue-50 dark:bg-blue-900/50 px-4 py-3 rounded-lg shadow-sm">
@@ -40,7 +38,7 @@ const About = () => {
                   <div className="bg-blue-50 dark:bg-blue-900/50 px-4 py-3 rounded-lg shadow-sm">
                     <p className="font-medium text-blue-800 dark:text-blue-300"><i className="fas fa-laptop-code mr-2"></i> 4th Year CSE Student</p>
                   </div>
-                  <div className="bg-blue-50 dark:bg-blue-900/50 px-4 py-3 rounded-lg shadow-sm">
+                  <div className="bg-blue-50 dark:bg-blue-900/50 px-4 py-3 rounded-lg shadow-sm cursor-pointer" onClick={() => window.open('https://https://www.mu.edu.et/', '_blank')}>
                     <p className="font-medium text-blue-800 dark:text-blue-300"><i className="fas fa-map-marker-alt mr-2"></i> Mekelle, Ethiopia</p>
                   </div>
                 </div>

@@ -21,7 +21,7 @@ const projects = [
       id: 3,
       title: "University Portal",
       description: "A comprehensive university management system for students, faculty, and administration.",
-      image: "https://images.unsplash.com/photo-1557838923-298f30969410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80",
+      image: "/mekelle.png",
       tags: ["Django", "PostgreSQL", "Bootstrap"],
       github: "#",
       demo: "#"
@@ -75,7 +75,12 @@ const projects = [
           </div>
           
           <div className="mt-12 text-center">
-            <a href="#" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
+            <a 
+              href="https://github.com/Filmon24" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
+            >
               <i className="fab fa-github mr-3"></i> View All Projects on GitHub
             </a>
           </div>

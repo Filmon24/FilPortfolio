@@ -45,7 +45,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-slate-800 mb-1">Email Me</h3>
-                    <p className="text-slate-600 hover:text-blue-600 transition-colors">{social.email}</p>
+                    <a href={`mailto:${social.email}`} className="text-slate-600 hover:text-blue-600 transition-colors">{social.email}</a>
                   </div>
                 </div>
                 
@@ -55,7 +55,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-slate-800 mb-1">LinkedIn</h3>
-                    <a href={social.linkedin} className="text-slate-600 hover:text-blue-600 transition-colors">{social.linkedin}</a>
+                    <a href={social.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-blue-600 transition-colors">Connect on LinkedIn</a>
                   </div>
                 </div>
                 
@@ -65,7 +65,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-slate-800 mb-1">GitHub</h3>
-                    <a href={social.github} className="text-slate-600 hover:text-blue-600 transition-colors">{social.github}</a>
+                    <a href={social.github} target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-blue-600 transition-colors">View my GitHub</a>
                   </div>
                 </div>
                 
@@ -87,7 +87,10 @@ const Contact = () => {
                     <a 
                       key={index}
                       href={link.url} 
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"
+                      title={link.name}
                     >
                       <i className={`${link.icon} text-xl`}></i>
                     </a>

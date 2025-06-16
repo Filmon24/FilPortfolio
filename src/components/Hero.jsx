@@ -14,7 +14,7 @@ const Hero = () => {
               
               <p className="text-slate-600 dark:text-gray-300 mb-8">
                 Passionate about building innovative solutions to real-world problems. 
-                Currently pursuing my BSc in Computer Science and Engineering at Mekelle University.
+                Currently pursuing my BSc in Computer Science and Engineering <b> At Mekelle University. </b>
               </p>
               
               <div className="flex flex-wrap gap-4">

@@ -35,8 +35,8 @@ export const technicalSkills = {
 
 export const social = {
   email: "filmonataklty@gmail.com",
-  linkedin: "www.linkedin.com/in/filmon-ataklty",
-  github: "github.com/Filmon24",
+  linkedin: "https://www.linkedin.com/in/filmon-ataklty",
+  github: "https://github.com/Filmon24",
   location: "Mekelle, Ethiopia",
   socialLinks: [
     { name: "LinkedIn", icon: "fab fa-linkedin-in", url: "https://www.linkedin.com/in/filmon-ataklty" },
