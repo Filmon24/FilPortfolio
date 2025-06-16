@@ -10,15 +10,17 @@ const Contact = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <form className="space-y-6">
+              {/* Formspree Integration: Add action and method attributes */}
+              <form action="https://formspree.io/f/xovwwpoq" method="POST" className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Your Name</label>
-                  <input type="text" id="name" name="name" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200" />
+                  {/* Important: Ensure the 'name' attribute matches your desired field name in Formspree */}
+                  <input type="text" id="name" name="name" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200" required />
                 </div>
                 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
-                  <input type="email" id="email" name="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200" />
+                  <input type="email" id="email" name="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200" required />
                 </div>
                 
                 <div>
@@ -28,7 +30,7 @@ const Contact = () => {
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Message</label>
-                  <textarea id="message" name="message" rows="5" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200"></textarea>
+                  <textarea id="message" name="message" rows="5" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200" required></textarea>
                 </div>
                 
                 <button type="submit" className="w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
@@ -102,6 +104,6 @@ const Contact = () => {
         </div>
       </section>
     );
-  };
+};
   
-  export default Contact;
+export default Contact;

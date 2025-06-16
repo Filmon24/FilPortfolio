@@ -11,9 +11,9 @@ const Experience = () => {
 
   // Slower animation for the timeline
   const lineY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  // Gentler slide animations
-  const leftX = useTransform(scrollYProgress, [0, 1], ["-50%", "0%"]);
-  const rightX = useTransform(scrollYProgress, [0, 1], ["50%", "0%"]);
+  // Gentler slide animations with smaller distances
+  const leftX = useTransform(scrollYProgress, [0, 1], ["-30%", "0%"]);
+  const rightX = useTransform(scrollYProgress, [0, 1], ["30%", "0%"]);
 
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto" ref={containerRef}>
@@ -29,23 +29,23 @@ const Experience = () => {
       
       <div className="relative">
         <motion.div 
-          className="absolute left-4 md:left-1/2 h-full border-r-2 border-dashed border-blue-200"
+          className="absolute left-1/2 h-full border-r-2 border-dashed border-blue-200 transform -translate-x-1/2"
           style={{ height: lineY }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
+          transition={{ duration: 2, ease: "easeInOut" }}
         ></motion.div>
         
         <div className="space-y-16">
           {experiences.map((exp, index) => (
             <motion.div 
               key={exp.id} 
-              className="relative pl-16 md:pl-0 md:flex md:justify-between md:items-center md:odd:flex-row-reverse"
+              className="relative pl-16 md:pl-0 md:flex md:justify-between md:items-center"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: index * 0.3 }}
             >
               <motion.div 
-                className="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center transform -translate-x-4 md:-translate-x-4 z-10 border-4 border-white shadow-lg"
+                className="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center transform -translate-x-4 md:-translate-x-1/2 z-10 border-4 border-white shadow-lg"
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
               >
@@ -53,9 +53,9 @@ const Experience = () => {
               </motion.div>
               
               <motion.div 
-                className="md:w-5/12"
+                className={`md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}
                 style={{ x: index % 2 === 0 ? leftX : rightX }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
               >
                 <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-500">
                   <div className="flex justify-between items-center mb-3">
