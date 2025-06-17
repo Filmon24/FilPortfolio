@@ -20,39 +20,43 @@ const Experience = () => {
       <h2 className="text-3xl font-bold text-center mb-12">
         <span className="border-b-4 border-blue-500 pb-2">Work Experience</span>
       </h2>
-      
+
       <div className="flex justify-center mb-12">
-        <a href="#" className="flex items-center px-6 py-3 bg-slate-800 text-white font-medium rounded-lg hover:bg-slate-900 transition-colors shadow-md hover:shadow-lg">
+        <a 
+          href="/CV_Filmon Ataklty.pdf"
+          download="CV_Filmon Ataklty.pdf"
+          className="flex items-center px-6 py-3 bg-slate-800 text-white font-medium rounded-lg hover:bg-slate-900 transition-colors shadow-md hover:shadow-lg"
+        >
           <i className="fas fa-download mr-3"></i> Download Full CV (PDF)
         </a>
       </div>
-      
+
       <div className="relative">
-        <motion.div 
+        <motion.div
           className="absolute left-1/2 h-full border-r-2 border-dashed border-blue-200 transform -translate-x-1/2"
           style={{ height: lineY }}
           transition={{ duration: 2, ease: "easeInOut" }}
         ></motion.div>
-        
+
         <div className="space-y-16">
           {experiences.map((exp, index) => (
-            <motion.div 
-              key={exp.id} 
+            <motion.div
+              key={exp.id}
               className="relative pl-16 md:pl-0 md:flex md:justify-between md:items-center"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: index * 0.3 }}
             >
-              <motion.div 
+              <motion.div
                 className="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center transform -translate-x-4 md:-translate-x-1/2 z-10 border-4 border-white shadow-lg"
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
               >
                 <i className="fas fa-briefcase text-white text-sm"></i>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 className={`md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}
                 style={{ x: index % 2 === 0 ? leftX : rightX }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
@@ -76,8 +80,8 @@ const Experience = () => {
                     <h5 className="text-sm font-semibold text-blue-800 mb-2">Key Responsibilities & Achievements:</h5>
                     <ul className="text-slate-600 space-y-2">
                       {exp.points.map((point, i) => (
-                        <motion.li 
-                          key={i} 
+                        <motion.li
+                          key={i}
                           className="flex items-start"
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -103,7 +107,7 @@ const Experience = () => {
                   )}
                 </div>
               </motion.div>
-              
+
               <div className="hidden md:block md:w-5/12"></div>
             </motion.div>
           ))}
@@ -113,4 +117,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;
