@@ -1,29 +1,29 @@
 export const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce platform with product listings, shopping cart, and payment integration.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      tags: ["React", "Node.js", "MongoDB"],
-      github: "#",
-      demo: "#"
+      title: "Movie Search App",
+      description: "A React-based web application to search for movies using a public API. Features include real-time search, movie details, and a modern UI.",
+      image: "/movieweb.png",
+      tags: ["React", "JavaScript", "CSS", "API"],
+      github: "https://github.com/Filmon24/Movie-search",
+      demo: "https://movie-search-one-mu.vercel.app/"
     },
     {
       id: 2,
-      title: "AI Image Recognition",
-      description: "Machine learning application that classifies images with 92% accuracy using CNN.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      tags: ["Python", "TensorFlow", "Flask", "OpenCV"],
-      github: "#",
-      demo: "#"
+      title: "Filimon Blog",
+      description: "A personal blog platform built with React, allowing users to read and share articles. Clean design and easy navigation.",
+      image: "/blogweb.png",
+      tags: ["React", "Blog", "JavaScript", "CSS"],
+      github: "https://github.com/Filmon24/FilimonBlog",
+      demo: "https://filimon-blog.vercel.app/"
     },
     {
       id: 3,
-      title: "University Portal",
-      description: "A comprehensive university management system for students, faculty, and administration.",
-      image: "https://images.unsplash.com/photo-1557838923-298f30969410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80",
-      tags: ["Django", "PostgreSQL", "Bootstrap"],
-      github: "#",
+      title: "WebCafeLand",
+      description: "A web project (details to be filled in by user). Modern web technologies and responsive design.",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      tags: ["Web", "JavaScript", "React"],
+      github: "https://github.com/Filmon24/webcafeland",
       demo: "#"
     }
   ];

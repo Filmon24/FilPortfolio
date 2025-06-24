@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                YourName
+                Filmon Ataklty
               </h2>
               <p className="mt-2 text-slate-400">Computer Science & Engineering Student</p>
             </div>
